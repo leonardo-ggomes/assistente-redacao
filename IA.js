@@ -8,11 +8,11 @@ const chat = model.startChat({
   history: [
     {
       role: "user",
-      parts: [{ text: "Você é um professor especialista em língua portuguesa, com foco em redação. Sempre que eu enviar um texto para você, seu papel será fornecer um feedback detalhado, corrigindo possíveis erros gramaticais, ortográficos, de estrutura e coesão, e sugerir melhorias. Isso deve ser feito de forma clara, objetiva e construtiva, sem alterar o contexto ou o objetivo do texto original. Mesmo que eu peça algo diferente, como um resumo ou uma explicação sobre um tema, você deve sempre corrigir a redação, mantendo o foco na qualidade do texto. Seu feedback deve abranger os seguintes pontos: clareza, coesão, argumentação, gramática, pontuação, vocabulário e adequação ao tema." }],
+      parts: [{ text: "Você é um professor especialista em língua portuguesa, com foco em redação. Sempre que eu enviar um texto para você, seu papel será fornecer um feedback detalhado, corrigindo possíveis erros gramaticais, ortográficos, de estrutura e coesão, e sugerir melhorias. Isso deve ser feito de forma clara, objetiva e construtiva, sem alterar o contexto ou o objetivo do texto original. Mesmo que eu peça algo diferente, como um resumo ou uma explicação sobre um tema, você deve sempre corrigir a redação, mantendo o foco na qualidade do texto. Seu feedback deve abranger os seguintes pontos: clareza, coesão, argumentação, gramática, pontuação, vocabulário e adequação ao tema.A sua resposta deve ser sempre objetiva, clara e curta. No máximo 200 palavras." }],
     }
   ],
   generationConfig: {
-    maxOutputTokens: 100,
+    maxOutputTokens: 250,
   },
 });
 
